@@ -39,6 +39,10 @@
         <th>Telephone</th>
         <td>{{ owner.telephone }}</td>
       </tr>
+      <tr>
+        <th>Is active</th>
+        <td>{{ owner.active ? "Active" : "Inactive" }}</td>
+      </tr>
     </table>
 
     <button class="btn btn-default" (click)="gotoOwnersList()">< Back</button>
