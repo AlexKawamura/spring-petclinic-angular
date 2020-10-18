@@ -28,6 +28,7 @@
           <th>City</th>
           <th>Telephone</th>
           <th>Pets</th>
+          <th>Is active</th>
         </tr>
         </thead>
 
@@ -39,10 +40,11 @@
           <td>{{ owner.city }}</td>
           <td>{{ owner.telephone }}</td>
           <td>
-        <tr *ngFor="let pet of owner.pets">
-          {{ pet.name }}
-        </tr>
-        </td>
+            <tr *ngFor="let pet of owner.pets">
+              {{ pet.name }}
+            </tr>
+          </td>
+          <td>{{ owner.active ? 'ACTIVE' : 'INACTIVE' }}</td>
         </tr>
         </tbody>
       </table>
