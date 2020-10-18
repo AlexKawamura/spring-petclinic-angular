@@ -29,5 +29,6 @@ export interface Owner {
   address: string;
   city: string;
   telephone: string;
+  active: boolean;
   pets: Pet[];
 }
